@@ -19,7 +19,7 @@ const setup = () => {
     }
 }
 
-test('Valid input should submit without error message', () => {
+test('Valid input should submit without error messages', () => {
     const {emailInput, emailError, passwordInput, passwordError, submit} = setup();
     fireEvent.change(emailInput, {target: {value: 'joe@gmail.com'}});
     expect(emailInput.value).toBe('joe@gmail.com');
@@ -34,7 +34,7 @@ test('Valid input should submit without error message', () => {
     expect(passwordInput.value).toBe('');
 });
 
-test('Invalid input should display error message and fail to submit', () => {
+test('Invalid input should display error messages and fail to submit', () => {
     const {emailInput, emailError, passwordInput, passwordError, submit} = setup();
     fireEvent.change(emailInput, {target: {value: 'joegmailcom'}});
     expect(emailInput.value).toBe('joegmailcom');
