@@ -7,7 +7,57 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2 {
+  text-align: center;
+}
+
+.login-form {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  margin-right: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+input {
+  margin-top: 8px;
+  padding-left: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #DDF3F5;
+  border: none;
+}
+
+input[type=email] {
+  padding-right: 31px;
+}
+
+.error-msg{
+  font-size: 12px;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+button {
+  margin-top: 16px;
+  padding: 8px 30px;
+  border-radius: 6px;
+  border-color: #DDF3F5;
+  box-sizing: border-box;
+  background-color: white;
+  border-style: solid;
+  border-width: 4px;
+  font-size: 15px;
 }
